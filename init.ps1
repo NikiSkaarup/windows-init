@@ -1,11 +1,12 @@
 $repoPath = Split-Path $MyInvocation.MyCommand.Path -Parent
-$env:Path += ";$repoPath"
 
 Write-Output -f Green "Running init"
 $setupStart = Invoke-Expression "$repoPath\get-date-formatted.ps1"
 
+Write-Output -f Cyan "Set execution policy"
+Write-Output -f Cyan "Completed installing Scoop"
+
 Write-Output -f Cyan "Installing Scoop"
-Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 Invoke-WebRequest -useb get.scoop.sh | Invoke-Expression
 Write-Output -f Cyan "Completed installing Scoop"
 
@@ -35,7 +36,7 @@ Write-Output -f Cyan "Entered administrative powershell"
 
 Write-Output -f Cyan "Installing Scoop fonts"
 scoop install JetBrains-Mono JetBrainsMono-NF-Mono JetBrainsMono-NF
-scoop install CascadiaCode-NF Cascadia-Code CascadiaCode-NF-Mono
+scoop install Cascadia-Code CascadiaCode-NF CascadiaCode-NF-Mono
 Write-Output -f Cyan "Completed installing Scoop fonts"
 
 Write-Output -f Cyan "Setup profile.ps1 symlink"
