@@ -1,2 +1,35 @@
-node_modules
+# Ensure we don't store any files we haven't confirmed don't contain anything we don't want it to
+# Allowing files manually is important since otherwise there is a risk of storing files that
+# contain ssh keys, passwords, etc. since on windows the .ssh folder in %userprofiles% have not
+# been a thing until recently.
+persist/*
+
+# mpv-git
+!persist/mpv-git
+persist/mpv-git/portable_config/*
+!persist/mpv-git/portable_config/mpv.conf
+
+# qbittorrent
+!persist/qbittorrent
+persist/qbittorrent/*
+!persist/qbittorrent/*.qbtheme
+
+# sublime-merge
+!persist/sublime-merge
+persist/sublime-merge/Data/*
+!persist/sublime-merge/Data/Packages
+persist/sublime-merge/Data/Packages/*
+!persist/sublime-merge/Data/Packages/User
+persist/sublime-merge/Data/Packages/User/*
+!persist/sublime-merge/Data/Packages/User/*.sublime-settings
+
+# sublime-text
+!persist/sublime-text
+persist/sublime-text/Data/*
+!persist/sublime-text/Data/Packages
+persist/sublime-text/Data/Packages/*
+!persist/sublime-text/Data/Packages/User
+persist/sublime-text/Data/Packages/User/*
+!persist/sublime-text/Data/Packages/User/*.sublime-settings
+
 test.ps1
