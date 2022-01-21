@@ -44,4 +44,4 @@ copies config files from persist to scoops persist
 
 ## Symlinks profile.ps1 to $PROFILE
 
-## Enables SSH-Agent 
+## Enables SSH-Agent
