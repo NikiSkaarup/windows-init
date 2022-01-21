@@ -40,6 +40,8 @@ copies config files from persist to scoops persist
 - CascadiaCode-NF
 - CascadiaCode-NF-Mono
 
-## Adds the repository to environment path
+## Adds the repository bin folder to environment path
 
 ## Symlinks profile.ps1 to $PROFILE
+
+## Enables SSH-Agent 

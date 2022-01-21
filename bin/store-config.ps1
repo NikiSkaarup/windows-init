@@ -1,4 +1,5 @@
-$repoPath = Split-Path $MyInvocation.MyCommand.Path -Parent
+$binPath = Split-Path $MyInvocation.MyCommand.Path -Parent
+$repoPath = Split-Path $binPath -Parent
 
 $scoopPersist = "$env:USERPROFILE\scoop\persist"
 $repoPersist = "$repoPath\persist"
