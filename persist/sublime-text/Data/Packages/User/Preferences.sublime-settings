@@ -1,0 +1,21 @@
+{
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Cascadia Code Regular",
+	"font_size": 16,
+	"font_options": ["directwrite"],
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "Adaptive.sublime-theme",
+	"update_check": false,
+	"caret_style": "blink",
+	"caret_extra_top": 1,
+	"caret_extra_bottom": 1,
+	"caret_extra_width": 1,
+	"hardware_acceleration": "opengl",
+}

@@ -1,0 +1,13 @@
+{
+	"editor_path": "C:\\Users\\nws\\scoop\\apps\\sublime-text\\current\\sublime_text.exe",
+	"editor_wait_args": "-n -w",
+	"font_face": "Jetbrains Mono",
+	"hardware_acceleration": "opengl",
+	"theme": "auto",
+	"update_check": false,
+	"diff_style": "auto",
+	"side_bar_layout": "commit_graph_as_column",
+	"font_size": 13,
+	"render_commit_dialog_message_at_top": true,
+	"themed_title_bar": true,
+}
