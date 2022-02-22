@@ -26,10 +26,6 @@ scoop install vscode sublime-text sublime-merge
 scoop install qbittorrent madvr mpc-hc-fork mpv-git youtube-dl ffmpeg
 Write-Host -f Cyan "Completed installing Scoop apps"
 
-Write-Host -f Cyan "Adding repo persistenly to path"
-Invoke-Expression "$repoPath\add-bin-persistenly-to-path.ps1"
-Write-Host -f Cyan "Added repo persistenly to path"
-
 Write-Host -f Red "Entering administrative powershell"
 sudo pwsh -File "$repopath\sudo-init.ps1"
 Write-Host -f Red "Left administrative powershell"
