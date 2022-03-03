@@ -1,7 +1,5 @@
 # Windows Init
 
-## UNTESTED
-
 ## HOW TO
 First run `Set-ExecutionPolicy RemoteSigned -scope CurrentUser` if not already set.
 And then run `.\init.ps1`
@@ -29,7 +27,7 @@ copies config files from persist to scoops persist
 - madvr
 - mpc-hc-fork
 - mpv-git
-- youtubedl
+- youtube-dl
 - ffmpeg
 
 ## Installs a couple of fonts
@@ -45,3 +43,5 @@ copies config files from persist to scoops persist
 ## Symlinks profile.ps1 to $PROFILE
 
 ## Enables SSH-Agent
+
+## Disables Bell sound
